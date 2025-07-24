@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 90px;
+}
+
+
+.clik {
+    margin-top: 0;
+    margin-right: 20px;
+}
+
+h1{
+    font-size: 4.5rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.h01{
+    font-size: 5.5rem;
+}
+
+.hero {
+   margin: 50px 50px;
+   padding: 0% 0 50px;
+}
+
+.destaque {
+    color: #897AD8;
+}
+
+.descricao {    
+    font-size: 1.1rem;
+    color: #252625;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.destaque-texto {
+    font-weight: bold;
+}
+
+.descricao-secundaria {
+    font-size: 1.2rem;
+    color: #252625;
+    margin-top: 30px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+}
+
+.btn-roxo {
+    background-color: #897AD8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    width: 10px;
+}
