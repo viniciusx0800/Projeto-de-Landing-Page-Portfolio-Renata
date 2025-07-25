@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -74,4 +74,347 @@ h1{
     cursor: pointer;
     text-decoration: none;
     width: 10px;
+}
+
+
+.hero-imagens {
+    width: 660px;
+    height: 600px;
+    top: 115px;
+    left: 700px;
+    angle: 0deg;
+    opacity: 1px;
+    gap: 20px;
+    border: #252625 solid 1px;
+    max-width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}  */
+
+/* .hero-imagens { */
+    /* width: 660px;
+    height: 600px;
+    top: 115px;
+    left: 700px;
+    angle: 0deg;
+    opacity: 1;
+    gap: 19px; */
+
+  /* grid-auto-columns: 1fr;
+  width: 660px;
+  height: 600px;
+  border: #252625 solid 1px;
+  top: 115px;
+  left: 700px;
+  angle: 0deg;
+  gap: 19px;
+} */
+
+/* .imagem-principal {
+    width: 660px;
+    height: 300px;
+    justify-content: space-between;
+    angle: 0deg;
+    opacity: 1;
+
+} */
+
+/* Bloco da Renata */
+/* .imagem-renata {
+    width: 319.14px;
+    height: 300px;
+    border-radius: 5px;
+} */
+
+/* Banner de calendário */
+/* .imagem-lender {
+    width: 320px;
+    height: 300px;
+    angle: 0deg;
+    opacity: 1;
+} */
+
+/* 
+.imagem-girafa {
+    width: 410px;
+    height: 280px;
+    angle: 0deg;
+    opacity: 1;
+    border-radius: 10px;
+
+} */
+
+/* Agrupamento de ferramentas */
+/* .imagem-ferramentas {
+    
+} */
+
+/* .ferramentas{
+    width: 230px;
+    height: 281px;
+    angle: 0deg;
+    opacity: 1;
+    gap: 19px;
+    border: #252625 solid 1px;
+} */
+
+.avatar {
+    width: 250px;
+    height: 250px;
+   
+}
+
+.banner {
+    width: 300px;
+    height: 200px;
+}
+
+.Inspection {
+    width: 300px;
+    height: 200px;
+}
+
+.litoteca {
+    width: 300px;
+    height: 200px;
+}
+
+.social-media {
+    width: 300px;
+    height: 200px;
+}
+
+.linha {
+    width: 100%;
+    height: 1px;
+    background-color: #ff0000;
+    margin: 20px 0;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+  background: #fff;
+  color: #1a1a1a;
+}
+
+/* Container padrão */
+.container {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+.logo {
+  height: 35px;
+}
+
+.clik p {
+  color: #0a0a0a;
+  font-weight: 600;
+}
+
+/* HERO SECTION */
+.hero {
+  border: #df08df solid 1px;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.hero-texto h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.h01 {
+  color: #1a1a1a;
+}
+
+.destaque {
+  color: #6a4df4;
+}
+
+.descricao {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.destaque-texto {
+  color: #6a4df4;
+  font-weight: bold;
+}
+
+.descricao-secundaria {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.btn-roxo {
+  background: #6a4df4;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-roxo:hover {
+  background: #5a3edb;
+}
+
+/* MÉTRICAS */
+.metricas {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+.metricas div {
+  text-align: left;
+  font-weight: 600;
+}
+
+.metricas strong {
+  display: block;
+  font-size: 1.8rem;
+  color: #6a4df4;
+}
+
+/* IMAGENS */
+.hero-imagens {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-rows: auto auto; */
+  gap: 0.8rem;
+}
+
+.imagem-principal {
+  grid-column: 1 / 3;
+  display: flex;
+  gap: 1rem;
+}
+
+.imagem-renata {
+  width: 319.14px;
+  height: 300px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.imagem-lender {
+  width: 320px;
+  height: 300px;  
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.imagem-girafa {
+  width: 360px;
+  height: 240px;
+  border-radius: 12px;
+  object-fit: cover;
+  grid-column: 1 / 2;
+}
+
+.imagem-figma {
+    width: 230px;
+    height: 615px;
+    border-radius: 12px;
+    object-fit: cover;
+    
+
+}
+
+/* .imagem-ps,
+.imagem-ai {
+  width: 110px;
+  height: 95px;
+  border-radius: 12px;
+  object-fit: cover;
+} */
+
+/* .imagem-miro,
+.imagem-notion {
+  width: 110px;
+  height: 95px;
+  border-radius: 12px;
+  object-fit: cover;
+} */
+
+.ferramentas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  grid-column: 2 / 3;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.ferramentas img {
+  height: 48px;
+  border-radius: 8px;
+}
+
+/* RODAPÉ DO HERO */
+.hero-rodape {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: #f4f4ff;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hero-rodape p {
+  max-width: 700px;
+  font-size: 1.1rem;
+}
+
+.hero-rodape a {
+  background: #e1dfff;
+  padding: 0.7rem 1.4rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.avatar {
+  width: 130px;
+  height: auto;
+  margin-left: 2rem;
 }
