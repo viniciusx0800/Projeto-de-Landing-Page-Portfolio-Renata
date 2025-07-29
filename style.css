@@ -1,198 +1,3 @@
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f4;
-}
-
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    width: 90px;
-}
-
-
-.clik {
-    margin-top: 0;
-    margin-right: 20px;
-}
-
-h1{
-    font-size: 4.5rem;
-    color: #333;
-    margin-bottom: 40px;
-}
-
-.h01{
-    font-size: 5.5rem;
-}
-
-.hero {
-   margin: 50px 50px;
-   padding: 0% 0 50px;
-}
-
-.destaque {
-    color: #897AD8;
-}
-
-.descricao {    
-    font-size: 1.1rem;
-    color: #252625;
-    margin-top: 10px;
-    line-height: 1.5;
-}
-
-.destaque-texto {
-    font-weight: bold;
-}
-
-.descricao-secundaria {
-    font-size: 1.2rem;
-    color: #252625;
-    margin-top: 30px;
-    line-height: 1.2;
-    margin-bottom: 40px;
-}
-
-.btn-roxo {
-    background-color: #897AD8;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    text-decoration: none;
-    width: 10px;
-}
-
-
-.hero-imagens {
-    width: 660px;
-    height: 600px;
-    top: 115px;
-    left: 700px;
-    angle: 0deg;
-    opacity: 1px;
-    gap: 20px;
-    border: #252625 solid 1px;
-    max-width: 45%;
-    display: flex;
-    flex-wrap: wrap;
-    
-    
-}  */
-
-/* .hero-imagens { */
-    /* width: 660px;
-    height: 600px;
-    top: 115px;
-    left: 700px;
-    angle: 0deg;
-    opacity: 1;
-    gap: 19px; */
-
-  /* grid-auto-columns: 1fr;
-  width: 660px;
-  height: 600px;
-  border: #252625 solid 1px;
-  top: 115px;
-  left: 700px;
-  angle: 0deg;
-  gap: 19px;
-} */
-
-/* .imagem-principal {
-    width: 660px;
-    height: 300px;
-    justify-content: space-between;
-    angle: 0deg;
-    opacity: 1;
-
-} */
-
-/* Bloco da Renata */
-/* .imagem-renata {
-    width: 319.14px;
-    height: 300px;
-    border-radius: 5px;
-} */
-
-/* Banner de calendário */
-/* .imagem-lender {
-    width: 320px;
-    height: 300px;
-    angle: 0deg;
-    opacity: 1;
-} */
-
-/* 
-.imagem-girafa {
-    width: 410px;
-    height: 280px;
-    angle: 0deg;
-    opacity: 1;
-    border-radius: 10px;
-
-} */
-
-/* Agrupamento de ferramentas */
-/* .imagem-ferramentas {
-    
-} */
-
-/* .ferramentas{
-    width: 230px;
-    height: 281px;
-    angle: 0deg;
-    opacity: 1;
-    gap: 19px;
-    border: #252625 solid 1px;
-} */
-
-.avatar {
-    width: 250px;
-    height: 250px;
-   
-}
-
-.banner {
-    width: 300px;
-    height: 200px;
-}
-
-.Inspection {
-    width: 300px;
-    height: 200px;
-}
-
-.litoteca {
-    width: 300px;
-    height: 200px;
-}
-
-.social-media {
-    width: 300px;
-    height: 200px;
-}
-
-.linha {
-    width: 100%;
-    height: 1px;
-    background-color: #ff0000;
-    margin: 20px 0;
-}
-
 /* Reset básico */
 * {
   margin: 0;
@@ -222,20 +27,39 @@ body {
   font-size: 0.9rem;
 }
 
-.logo {
+/* "©"  */
+.letraC {
+  position: relative;
+  top: -24px;
+  font-size: 1.2rem;
+}
+
+/* rejota */
+.reojota {
   height: 35px;
 }
 
 .clik p {
-  color: #0a0a0a;
-  font-weight: 600;
+  
+}
+
+.clika {
+  color: #000000;
+  text-decoration: none;
 }
 
 /* HERO SECTION */
 .hero {
-  border: #df08df solid 1px;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  /* background: url(assets/5c4c7a50956309cf829bc93545f9c0c35311a33b.png) no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.87)), 
+  url('assets/5c4c7a50956309cf829bc93545f9c0c35311a33b.png');
+  background-size: cover; 
+  background-position: bottom; 
+  background-repeat: no-repeat; */
+  margin: 25px;
+  border: #ff00d4 solid 1px;
+  padding: auto;
+  
 }
 
 .hero-grid {
@@ -245,69 +69,151 @@ body {
   align-items: start;
 }
 
-.hero-texto h1 {
-  font-size: 3rem;
-  font-weight: 800;
+.hero-texto{
+  font-size: 2rem;
+  font-weight: 400;
   margin-bottom: 1.5rem;
   line-height: 1.2;
 }
 
-.h01 {
-  color: #1a1a1a;
+#h1{
+  margin-bottom: 40px;
 }
 
-.destaque {
+.tituloh1 {
+  font-family: Mulish;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 128px;
+  leading-trim: none;
+  line-height: 100%;
+  color: #ff0000;
+}
+
+.destaque-eu{
+  font-family: Mulish;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 70px;
+  leading-trim: NONE;
+  line-height: 70px;
+  letter-spacing: 0%;
+
+}
+
+.destaque-renata {
+  font-family: Mulish;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 70px;
+  leading-trim: NONE;
+  line-height: 70px;
+  letter-spacing: 0%;
   color: #6a4df4;
+}
+
+.exclama{
+  font-family: Mulish;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 70px;
+  leading-trim: NONE;
+  line-height: 70px;
+  letter-spacing: 0%;
+
 }
 
 .descricao {
-  font-size: 1.1rem;
+  font-size: 20px;
   margin-bottom: 1rem;
   font-weight: 600;
+  margin-bottom: 30px;
 }
 
-.destaque-texto {
-  color: #6a4df4;
-  font-weight: bold;
+.texto-experiencias {
+  font-family: Mulish;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
 }
 
 .descricao-secundaria {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  margin-bottom: 2rem;
+  font-family: Mulish;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-bottom: 60px;
 }
 
+
 .btn-roxo {
-  background: #6a4df4;
-  color: white;
+  width: 230px;
+  height: 55px;
+  border-radius: 50px;
+  background: #533E99;
+  color: #EEEDFA;
   padding: 0.8rem 1.2rem;
-  border-radius: 10px;
-  font-weight: bold;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: bold;
   text-decoration: none;
   transition: background 0.3s ease;
+  display: inline-block; 
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-bottom: 30px;
 }
 
 .btn-roxo:hover {
-  background: #5a3edb;
+  background: #775cee;
 }
 
 /* MÉTRICAS */
 .metricas {
+  /* border: #04d5fa solid 1px; */
   display: flex;
-  gap: 2rem;
-  margin-top: 2rem;
-  font-size: 1rem;
+  gap: 0.5rem;
+  margin-top: 4rem;
+  font-size: 4rem;
 }
 
 .metricas div {
-  text-align: left;
-  font-weight: 600;
+  text-align: center;
+ 
 }
 
-.metricas strong {
+
+
+.metricas span {
   display: block;
-  font-size: 1.8rem;
-  color: #6a4df4;
+  font-size: 4.8rem;
+  color: #B4AEE8;
+  font-weight: 800;
+  margin-left: 2px;
+}
+
+.descricao-metrica {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+
+.line{
+  background: #333;
+  height: 70px;
+  /* border-width: 2.8px; */
+  border: 2.5px solid #D9D9D9;
 }
 
 /* IMAGENS */
@@ -387,25 +293,47 @@ body {
 
 /* RODAPÉ DO HERO */
 .hero-rodape {
-  margin-top: 3rem;
-  padding: 2rem;
-  background: #f4f4ff;
-  border-radius: 16px;
+  border: #C2B9E2 solid 1px;
+  width: 80%;
+  margin: 45px;
+  padding: 20px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  border-radius: 20px;
+  background: #f4f4ff;
+
+  /* border: #ff00d4 solid 1px;
+  width: 1280px;
+  height: 200px;
+  angle: 0deg;
+  opacity: 1;
+  top: 897px;
+  left: 80px;
+  border-width: 1px; */
+
+  
 }
 
-.hero-rodape p {
+.texto-rodape{
   max-width: 700px;
-  font-size: 1.1rem;
+
 }
 
-.hero-rodape a {
+.descricao-rodape {
+  color:#2B2154;
+  font-family: Mulish;
+  font-weight: 400px;
+  font-style: Regular;
+  font-size: 20px;
+  letter-spacing: 0%;
+  padding: 20px;
+  align-items: center;
+}
+
+.btn-rodape {
+  border: #C2B9E2 solid 1px;
   background: #e1dfff;
   padding: 0.7rem 1.4rem;
-  border-radius: 10px;
+  border-radius: 50px;
   text-decoration: none;
   color: #333;
   font-weight: bold;
@@ -418,3 +346,31 @@ body {
   height: auto;
   margin-left: 2rem;
 }
+
+.banner {
+    width: 300px;
+    height: 200px;
+}
+
+.Inspection {
+    width: 300px;
+    height: 200px;
+}
+
+.litoteca {
+    width: 300px;
+    height: 200px;
+}
+
+.social-media {
+    width: 300px;
+    height: 200px;
+}
+
+.linha {
+    width: 100%;
+    height: 1px;
+    background-color: #ff0000;
+    margin: 20px 0;
+}
+
