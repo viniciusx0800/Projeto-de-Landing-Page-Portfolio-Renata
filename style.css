@@ -6,9 +6,16 @@
 }
 
 body {
+ 
   font-family: 'Mulish', sans-serif;
   background: #fff;
   color: #1a1a1a;
+}
+
+main {
+  
+  padding: 0 20px;
+  margin-top: 20px;
 }
 
 /* Container padrão */
@@ -21,9 +28,7 @@ body {
 /* Header */
 .header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem 0;
+  padding: 25px;
   font-size: 0.9rem;
 }
 
@@ -39,27 +44,42 @@ body {
   height: 35px;
 }
 
+.clik {
+  position: static;
+  top: 50px;
+  left: 50px;
+  transform: translate(-50%, 0%);
+  margin-right: 0px;
+}
+
 .clik p {
-  
+  font-size: 1.0rem;
+  color: #7f7ba8;
+  /* margin-left: 20px; */
 }
 
 .clika {
-  color: #000000;
+  color: #2B2154;
   text-decoration: none;
 }
 
 /* HERO SECTION */
+
+#inicio {
+  background: url(assets/5c4c7a50956309cf829bc93545f9c0c35311a33b.png) no-repeat center center fixed;
+  background-size: 3440px;
+  opacity: 1px;
+  /* padding: 100px 0; */
+  border: #00ff00 solid 1px;
+  width: 100%;
+}
+
 .hero {
-  /* background: url(assets/5c4c7a50956309cf829bc93545f9c0c35311a33b.png) no-repeat center center;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.87)), 
-  url('assets/5c4c7a50956309cf829bc93545f9c0c35311a33b.png');
-  background-size: cover; 
-  background-position: bottom; 
-  background-repeat: no-repeat; */
-  margin: 25px;
-  border: #ff00d4 solid 1px;
-  padding: auto;
-  
+  /* background-image:url(assets/5c4c7a50956309cf829bc93545f9c0c35311a33b.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: auto; */
 }
 
 .hero-grid {
@@ -67,6 +87,7 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
   align-items: start;
+  margin: 0px 90px 10px 70px;
 }
 
 .hero-texto{
@@ -81,17 +102,15 @@ body {
 }
 
 .tituloh1 {
-  font-family: Mulish;
   font-weight: 700;
   font-style: Bold;
   font-size: 128px;
   leading-trim: none;
   line-height: 100%;
-  color: #ff0000;
+  color: #1a1a1a;
 }
 
 .destaque-eu{
-  font-family: Mulish;
   font-weight: 700;
   font-style: Bold;
   font-size: 70px;
@@ -102,18 +121,16 @@ body {
 }
 
 .destaque-renata {
-  font-family: Mulish;
   font-weight: 700;
   font-style: Bold;
   font-size: 70px;
   leading-trim: NONE;
   line-height: 70px;
   letter-spacing: 0%;
-  color: #6a4df4;
+  color: #a6a0e4;
 }
 
 .exclama{
-  font-family: Mulish;
   font-weight: 700;
   font-style: Bold;
   font-size: 70px;
@@ -131,7 +148,6 @@ body {
 }
 
 .texto-experiencias {
-  font-family: Mulish;
   font-weight: 700;
   font-style: Bold;
   font-size: 18px;
@@ -141,7 +157,6 @@ body {
 }
 
 .descricao-secundaria {
-  font-family: Mulish;
   font-weight: 400;
   font-style: Regular;
   font-size: 20px;
@@ -152,9 +167,9 @@ body {
 }
 
 
-.btn-roxo {
+.btn-fale-comigo {
   width: 230px;
-  height: 55px;
+  height: 45px;
   border-radius: 50px;
   background: #533E99;
   color: #EEEDFA;
@@ -162,8 +177,8 @@ body {
   font-size: 20px;
   font-weight: 700;
   font-style: bold;
-  text-decoration: none;
   transition: background 0.3s ease;
+  text-decoration: none;
   display: inline-block; 
   align-items: center;
   justify-content: center;
@@ -174,13 +189,14 @@ body {
   margin-bottom: 30px;
 }
 
-.btn-roxo:hover {
+.btn-fale-comigo:hover {
+  transition: background 0.3s ease;
   background: #775cee;
+  color: #1a1a1a;
 }
 
 /* MÉTRICAS */
 .metricas {
-  /* border: #04d5fa solid 1px; */
   display: flex;
   gap: 0.5rem;
   margin-top: 4rem;
@@ -189,10 +205,7 @@ body {
 
 .metricas div {
   text-align: center;
- 
 }
-
-
 
 .metricas span {
   display: block;
@@ -203,6 +216,8 @@ body {
 }
 
 .descricao-metrica {
+  font-family: Mulish;
+  font-weight: 400;
   font-size: 15px;
   color: #333;
   margin-bottom: 10px;
@@ -212,7 +227,6 @@ body {
 .line{
   background: #333;
   height: 70px;
-  /* border-width: 2.8px; */
   border: 2.5px solid #D9D9D9;
 }
 
@@ -220,8 +234,11 @@ body {
 .hero-imagens {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* grid-template-rows: auto auto; */
   gap: 0.8rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  
 }
 
 .imagem-principal {
@@ -231,7 +248,7 @@ body {
 }
 
 .imagem-renata {
-  width: 319.14px;
+  width: 320px;
   height: 300px;
   border-radius: 12px;
   object-fit: cover;
@@ -245,8 +262,8 @@ body {
 }
 
 .imagem-girafa {
-  width: 360px;
-  height: 240px;
+  width: 410px;
+  height: 280px;
   border-radius: 12px;
   object-fit: cover;
   grid-column: 1 / 2;
@@ -254,28 +271,10 @@ body {
 
 .imagem-figma {
     width: 230px;
-    height: 615px;
-    border-radius: 12px;
+    height: 115px;
     object-fit: cover;
-    
-
 }
 
-/* .imagem-ps,
-.imagem-ai {
-  width: 110px;
-  height: 95px;
-  border-radius: 12px;
-  object-fit: cover;
-} */
-
-/* .imagem-miro,
-.imagem-notion {
-  width: 110px;
-  height: 95px;
-  border-radius: 12px;
-  object-fit: cover;
-} */
 
 .ferramentas {
   display: flex;
@@ -287,7 +286,6 @@ body {
 }
 
 .ferramentas img {
-  height: 48px;
   border-radius: 8px;
 }
 
@@ -295,22 +293,13 @@ body {
 .hero-rodape {
   border: #C2B9E2 solid 1px;
   width: 80%;
+  height: 195px;
+  margin: 0 auto;
   margin: 45px;
-  padding: 20px;
+  padding: 10px;
   display: flex;
   border-radius: 20px;
-  background: #f4f4ff;
-
-  /* border: #ff00d4 solid 1px;
-  width: 1280px;
-  height: 200px;
-  angle: 0deg;
-  opacity: 1;
-  top: 897px;
-  left: 80px;
-  border-width: 1px; */
-
-  
+  background: #f4f4ff; 
 }
 
 .texto-rodape{
@@ -327,25 +316,33 @@ body {
   letter-spacing: 0%;
   padding: 20px;
   align-items: center;
+  justify-content: center;
+  line-height: 1.5;
 }
 
 .btn-rodape {
   border: #C2B9E2 solid 1px;
   background: #e1dfff;
   padding: 0.7rem 1.4rem;
-  border-radius: 50px;
+  border-radius: 60px;
   text-decoration: none;
   color: #333;
   font-weight: bold;
-  margin-top: 1rem;
+  margin-top: 0.6rem;
+  margin-left: 1rem;
   display: inline-block;
 }
 
-.avatar {
-  width: 130px;
-  height: auto;
-  margin-left: 2rem;
-}
+ .avatar-rodape {
+  background: url(assets/avatar-renatinha.png) no-repeat center center;
+  background-size: cover;
+  width: 321px; 
+  height: 321px;
+  display: flex; 
+  top: 50px;
+  left: 50px;
+  transform: translate( 55%, -43%);
+} 
 
 .banner {
     width: 300px;
