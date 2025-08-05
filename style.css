@@ -539,7 +539,7 @@ abbr {
 
 
 .titulo-projeto{
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: 700;
   color: #1E1E1E;
   margin-bottom: 20px;
@@ -710,7 +710,7 @@ abbr {
 
 
 /* Rodapé footer */
-.footer-novo {
+ .footer-novo {
   background: linear-gradient(to top, #2b1c3b 0%, #0b0c10 100%);
   padding: 60px 30px 30px;
   color: #fff;
@@ -755,10 +755,21 @@ abbr {
   text-decoration: none;
 }
 
+.img-setaI {
+  background: #B4AEE8;
+  width: 25px;
+  height: 25px;
+  border-radius: 12px;
+  padding: 2.58px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+}
+
 .footer-icon-email {
-  width: 20px;
-  height: 20px;
-  margin-left: 10px;
+  width: 12px;
+  height: 12px;
 }
 
 .footer-redes {
@@ -831,13 +842,13 @@ abbr {
   background: #e4d9ff;
 }
 
-.seta {
+/* .seta {
   width: 20px;
   height: 22px;
   background: #8362d6;
   transition: transform 0.3s;
   border-radius: 50%;
   margin-left: 8px;
-}
+} */
 
-
+ 
