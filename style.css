@@ -960,7 +960,7 @@ abbr {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
   .tituloh1,
   .destaque-eu,
   .destaque-renata,
