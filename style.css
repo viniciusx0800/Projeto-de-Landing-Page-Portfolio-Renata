@@ -342,10 +342,6 @@ main {
 /* Serviços */
 
 #servicos-id {
-  /* background: 
-  linear-gradient(rgba(250, 250, 250, 0.925), rgba(255, 255, 255, 0.822)), 
-  url(assets/5afaadf490e1147d1dd5af2c580b39d1c619515b.png) no-repeat left center fixed;
-  background-size: 1240px; */
   background-blend-mode: hard-light;
   background: url(assets/5afaadf490e1147d1dd5af2c580b39d1c619515b.png) no-repeat center center fixed;
   background-size: 1440px;
@@ -353,7 +349,6 @@ main {
   padding: 100px 0;
   left: 20px;
   width: 100%;
-
 }
 
  .servicos {
@@ -362,17 +357,12 @@ main {
   background-color: #ffffff;
 }
 
-
 .servicos-titulo {
   font-size: 2.5rem;
   font-weight: 700;
   color: #020202;
   margin-bottom: 20px;
   margin-left: 20px;
-}
-
-.cards-servicos {
-  
 }
 
 .card-ui {
@@ -550,7 +540,6 @@ abbr {
 }
 
 .projetos-grid-2 {
-  /* border: #00b7ff solid 1px; */
   display: flex;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
@@ -710,12 +699,14 @@ abbr {
 
 
 /* Rodapé footer */
+
  .footer-novo {
-  background: linear-gradient(to top, #2b1c3b 0%, #0b0c10 100%);
+ background: linear-gradient(to top, #2b1c3b 0%, #0b0c10 100%);
   padding: 60px 30px 30px;
   color: #fff;
   font-family: 'Segoe UI', sans-serif;
   position: relative;
+  height: 90vh;
 }
 
 .footer-container {
@@ -728,22 +719,24 @@ abbr {
   gap: 20px;
 }
 
-.footer-esquerda {
-  flex: 1;
-  min-width: 250px;
+.footer-esquerda span {
+  font-size: 25px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .footer-titulo {
-  font-size: 1.5rem;
-  color: #c4c4ff;
-  margin-bottom: 15px;
+  font-size: 36px;
+  color: #B4AEE8; 
+  margin-bottom: 20px; 
 }
 
 .footer-destaque {
   display: block;
-  color: #9e8df1;
+  color: #B4AEE8;
   font-weight: bold;
-  font-size: 1.6rem;
+  font-size: 36px;
 }
 
 .footer-email {
@@ -757,19 +750,25 @@ abbr {
 
 .img-setaI {
   background: #B4AEE8;
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   border-radius: 12px;
   padding: 2.58px;
   align-items: center;
   justify-content: center;
   display: flex;
-
+  margin-top: 20px;
+  margin-left: 10px ;
 }
 
 .footer-icon-email {
-  width: 12px;
-  height: 12px;
+  width: 8px;
+  height: 8px;
+}
+
+.footer-email:hover {
+  color: #0307f7;
+  text-decoration: underline;
 }
 
 .footer-redes {
@@ -789,35 +788,47 @@ abbr {
 }
 
 .footer-avatar-container {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex; 
+  top: 50px;
+  left: 50px;
+  transform: translate( -125%, 19%);
+  margin-top: 0px;
 }
 
 .footer-avatar {
-  max-height: 260px;
-  width: auto;
+  height: 378px;
+  width: 378px;
+  margin-top: 20px;
 }
 
 .footer-direita {
-  flex: 1;
-  min-width: 200px;
-  text-align: right;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: space-between;
+ margin-top: 0px;
+}
+
+.container-marca{
+  position: absolute;
+  bottom:  3px;
+  right: 30px;
+  margin-top: 35px; 
+  
 }
 
 .footer-logo {
-  width: 120px;
-  margin-bottom: 10px;
+  filter: brightness(0) invert(1);
+  width: 240px;
+  margin-bottom: -30px; 
+
 }
 
 .footer-direitos {
-  font-size: 0.9rem;
   color: #ccc;
+  font-size: 12px;
+}
+
+.footer-direitos i {
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: 200;
 }
 
 .footer-topo-btn {
@@ -832,6 +843,7 @@ abbr {
   font-weight: 600;
   font-size: 0.95rem;
   transition: background 0.3s ease;
+  margin-top: 35px;
 }
 
 .footer-topo-btn strong {
@@ -842,13 +854,38 @@ abbr {
   background: #e4d9ff;
 }
 
-/* .seta {
-  width: 20px;
-  height: 22px;
-  background: #8362d6;
-  transition: transform 0.3s;
-  border-radius: 50%;
-  margin-left: 8px;
-} */
-
- 
+@media (max-width: 1200px) {
+  .tituloh1,
+  .destaque-eu,
+  .destaque-renata,
+  .exclama {
+    font-size: 2rem;
+  }
+  .servicos-titulo,
+  .titulo-projeto {
+    font-size: 1.5rem;
+  }
+  .card-ui,
+  .card-ux,
+  .card-gr {
+    max-width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+  .linha-servico,
+  .linha-servico3 {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .badge {
+    width: 60px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+  .footer-logo {
+    width: 80px;
+  }
+  .footer-avatar {
+    max-height: 120px;
+  }
+} 
