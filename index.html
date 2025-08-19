@@ -10,16 +10,15 @@
   <title>Portfólio Renata | @Reojota</title>
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <div class="marcaRe"><img src="assets/assinatura.png" class="reojota" alt="logo"><i class="letraC">©</i></div>
-    </div>
-      <div class="clik">
-        <p> Portfolio interativo -<a href="#" class="clika"> pode clicar✨ </a></p>
-      </div>
-  </header>
-
   <main>
+    <header class="header">
+      <div class="container">
+        <div class="marcaRe"><img src="assets/assinatura.png" class="reojota" alt="logo"><i class="letraC">©</i></div>
+      </div>
+        <div class="clik">
+          <p> Portfolio interativo -<a href="#" class="clika"> pode clicar✨ </a></p>
+        </div>
+    </header>
     <!-- Hero -->
     <section id="inicio" class="hero">
       <div class="container hero-grid">
@@ -79,12 +78,14 @@
       </div>
       
     </section>
- <div class="linha"></div> 
     <!-- Serviços -->
      <section id="servicos-id" class="servicos">
-      <h2 class="servicos-titulo">Como posso <br> te ajudar?</h2>
+       <div class="teste-img">
+           <h2 class="servicos-titulo">Como posso <br> te ajudar?</h2>
+       </div>
+     
       <div class="cards-servicos">
-
+       
         <div class="card-ui">
            <div class="linha-servico">
            <span class="badge"><abbr title="User Interface">UI</abbr></span>
@@ -111,7 +112,6 @@
 
       </div>
     </section> 
-<!-- <div class="linha"></div> -->
     <!-- Projetos -->
     <section id="projetos" class="projetos"> 
        <h2 class="titulo-projeto">Projetos Principais</h2>
@@ -126,7 +126,8 @@
             exames de aptidão física e mental e avaliação psicológica 
             para o orgão público DETRAN-BA.
           </p>
-          <div class="t"tag-ux">UX Design</span>
+          <div>
+            <span class="tag-ux">UX Design</span>
             <span class="tag-ui">UI Design</span>
           </div>
         </div>
@@ -173,56 +174,52 @@
 
       </div>
     </section>
+    <footer id="contato" class="footer-novo">
+      <div class="footer-container">
 
-  </main>
-<div class="linha"></div>
- 
-<footer id="contato" class="footer-novo">
-  <div class="footer-container">
+        <div class="footer-esquerda">
 
-    <div class="footer-esquerda">
+          <p class="footer-titulo">
+            Bateu <span>curiosidade</span> sobre meu trabalho?<br>
+            <strong class="footer-destaque">Bora trocar uma ideia!</strong>
+          </p>
 
-      <p class="footer-titulo">
-        Bateu <span>curiosidade</span> sobre meu trabalho?<br>
-        <strong class="footer-destaque">Bora trocar uma ideia!</strong>
-      </p>
+          <a href="mailto:rnatadesign@gmail.com" class="footer-email">
+            rnatadesign@gmail.com <span class="img-setaI">
+              <img src="assets/up-right-arrow.png" alt="Email" class="footer-icon-email">
+            </span>
+          </a>
 
-      <a href="mailto:rnatadesign@gmail.com" class="footer-email">
-        rnatadesign@gmail.com <span class="img-setaI">
-          <img src="assets/up-right-arrow.png" alt="Email" class="footer-icon-email">
-        </span>
+          <div class="footer-redes">
+            <a href="#"><img src="assets/instagram.png" alt="Instagram" class="footer-icon"></a>
+            <a href="https://www.linkedin.com/in/rnatadesigner/" target="_blank"><img src="assets/linkedin (1).png" alt="LinkedIn" class="footer-icon"></a>
+          </div>
+
+        </div>
+
+        <div class="footer-avatar-container">
+          <img src="assets/avatar-renatinha-2.png" alt="Avatar Renata" class="footer-avatar">
+        </div>
+
+        <div class="container-marca">
+          <div class="footer-direita">
+            <img src="assets/assinatura.png" alt="Reojota Logo" class="footer-logo">
+          </div>
+          
+          <div class="footer-texto">
+            <p class="footer-direitos"><i>©</i>  <strong>reojota</strong> Todos os direitos reservados</p>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#inicio" class="footer-topo-btn">
+        Voltar para o <strong>início</strong> da página
+        <span class="footer-seta"> <img src="assets/up-arrow.png" alt="icon-seta" class="img-seta"> </span>
       </a>
+    </footer>
+  </main>
 
-      <div class="footer-redes">
-        <a href="#"><img src="assets/instagram.png" alt="Instagram" class="footer-icon"></a>
-        <a href="https://www.linkedin.com/in/rnatadesigner/" target="_blank"><img src="assets/linkedin (1).png" alt="LinkedIn" class="footer-icon"></a>
-      </div>
-
-    </div>
-
-    <div class="footer-avatar-container">
-      <img src="assets/avatar-renatinha-2.png" alt="Avatar Renata" class="footer-avatar">
-    </div>
-
-    <div class="container-marca">
-      <div class="footer-direita">
-        <img src="assets/assinatura.png" alt="Reojota Logo" class="footer-logo">
-      </div>
-      
-      <div class="footer-texto">
-        <p class="footer-direitos"><i>©</i>  <strong>reojota</strong> Todos os direitos reservados</p>
-      </div>
-      </div>
-    </div>
-  </div>
-
-  <a href="#inicio" class="footer-topo-btn">
-    Voltar para o <strong>início</strong> da página
-    <span class="footer-seta"> <img src="assets/up-arrow.png" alt="icon-seta" class="img-seta"> </span>
-  </a>
-</footer>
-
-
-  <script src="js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html> 
