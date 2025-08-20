@@ -401,27 +401,65 @@ main{
   transform: translate( 95%, -43%);
 }  
 
+/* serviços */
+
 
 #servicos-id {
   position: relative;
-  background: #F5F5F5; 
-  width: 100%;
-  padding: 100px 0;
-  overflow: hidden;
+  background: none; 
 }
 
- .servicos {
+#servicos-id::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url(assets/Ajuda\ \(1\).png) no-repeat center center fixed;
+  background-size:  cover; 
+  background-position: center;
+  opacity: 1; 
+  z-index: 0;
+  pointer-events: none;
+}
+
+#servicos-id > * {
+  position: relative;
+  z-index: 1;
+}
+
+.servicos{
+  /* background: #e6e6e6; */
   width: 100%;
-  padding: 60px 20px;
-  background-color: #ffffff;
+  height: 64rem;
 }
 
 .servicos-titulo {
-  font-size: 2.5rem;
+  color: #0e0e0e;
+  font-family: Mulish;
   font-weight: 700;
-  color: #020202;
-  margin-bottom: 20px;
-  margin-left: 20px;
+  font-style: Bold;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-top: 5rem;
+
+}
+
+.teste-img{
+  border: rgba(255, 255, 255, 0) solid 1px;
+  width: 423px;
+  height: 160px;
+  margin-left: 90px;
+  
+
+}
+
+.cards-servicos{
+  width: 851px;
+  height: 604px;
+  angle: 0deg;
+  opacity: 1;
+  margin-left: 30rem;
+  margin-top: 9rem;
 }
 
 .card-ui {
@@ -432,8 +470,7 @@ main{
   height: 168px;
   padding: 25px;
   border-radius: 12px;
-  margin-left: 31rem;
-  margin-bottom: 3rem;
+  margin-bottom: 3rem; 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -445,7 +482,6 @@ main{
   height: 168px;
   padding: 25px;
   border-radius: 12px;
-  margin-left: 31rem;
   margin-bottom: 3rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -458,7 +494,6 @@ main{
   height: 168px;
   padding: 25px;
   border-radius: 12px;
-  margin-left: 31rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease
 }
 
@@ -469,15 +504,21 @@ main{
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 120px;
-  height: 40px;
+  width: 70px;
+  height: 50.0323486328125px;
+  angle: 0 deg;
+  opacity: 1;
+  top: 4.98px;
   font-weight: bold;
   font-size: 1rem;
-  background-color: #fff;
+  background: #ffffff;
   color: #3b3b3b;
   border-radius: 50%;
   margin-bottom: 15px;
   cursor: context-menu;
+
+
+
 }
 
 abbr {
@@ -540,7 +581,7 @@ abbr {
 
 .projetos {
   padding: 60px 20px;
-  background: #ffffff;
+  background: #FEFEFE;
 }
 
 .tags {
@@ -782,24 +823,48 @@ abbr {
   gap: 20px;
 }
 
+.footer-esquerda{}
+
 .footer-esquerda span {
-  font-size: 29px;
+  /* font-size: 29px; */
   color: #ffffff;
   margin-bottom: 20px;
   margin-top: 20px;
+  font-family: Mulish;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 36px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+
 }
 
 .footer-titulo {
   font-size: 36px;
   color: #B4AEE8; 
   margin-bottom: 20px; 
+  font-family: Mulish;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 36px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+
 }
 
 .footer-destaque {
   display: block;
   color: #B4AEE8;
-  font-weight: bold;
+  font-family: Mulish;
+  font-weight: 700;
+  font-style: Bold;
   font-size: 36px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+
 }
 
 .footer-email {
