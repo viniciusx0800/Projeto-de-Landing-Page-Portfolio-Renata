@@ -8,7 +8,7 @@
 body {
  
   font-family: 'Mulish', sans-serif;
-  background: #ffffff;
+  background: #00000046;
   color: #1a1a1a;
 }
 
@@ -193,7 +193,6 @@ main{
   font-size: 20px;
   font-weight: 700;
   font-style: bold;
-  transition: background 0.3s ease;
   text-decoration: none;
   display: inline-block; 
   align-items: center;
@@ -206,49 +205,53 @@ main{
 }
 
 .btn-fale-comigo:hover {
-  transition: background 0.3s ease;
+  transition:  0.9s ease-out;
   background: #cdc5f5e1;
   color: #e9e5e5;
 }
 
 /* MÉTRICAS */
 .metricas {
-  height: 8rem;
   display: flex;
-  gap: 0.5rem;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  font-size: 4rem;
+  gap: 1.25rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
-
-.metricas div {
-  text-align: center;
+.metricas .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0.5rem;
+  position: relative;
 }
-
-.metricas span {
-  display: block;
-  font-size: 4.8rem;
+.metricas .item + .item {       
+  border-left: 2px solid #D9D9D9;
+}
+.metricas .valor {
+  font-size: clamp(34px, 5vw, 48px);
   color: #B4AEE8;
   font-weight: 800;
-  margin-left: 2px;
+  line-height: 1;
 }
-
 .descricao-metrica {
-  font-family: Mulish;
   font-weight: 400;
   font-size: 13px;
   color: #333;
+  margin-top: 8px;
+}
+
+.gif-div{
+  width: 2px;
+  height: 0px;
+  opacity: 1;
+  margin-left: -45px;
+  position: relative;   /* para que 'top' funcione, se necessário */
   margin-bottom: 10px;
 }
+.gif{ width: 25px; }
 
-
-.line{
-  background:#D9D9D9;
-  padding: 0.5px;
-  margin: 16px;
-  height: 65px;
-  border: 2.5px solid #D9D9D9;
-}
 
 /* IMAGENS */
 .hero-imagens {
@@ -258,7 +261,6 @@ main{
   margin-top: 2rem;
   margin-bottom: 2rem;
   margin-left: -2rem;
-  
 }
 
 .imagem-principal {
@@ -279,6 +281,12 @@ main{
   height: 300px;  
   border-radius: 12px;
   object-fit: cover;
+}
+
+.imagem-lender:hover {
+  filter: brightness(0.6);
+  transition:  0.9s ease-out;
+  cursor: auto;
 }
 
 .imagem-girafa {
@@ -311,98 +319,80 @@ main{
 
 /* RODAPÉ DO HERO */
 
-@media (max-width: 768px) {
-  .hero-rodape {
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
-  }
-
-  .texto-rodape {
-    max-width: 100%;
-  }
-
-  .descricao-rodape{
-    font-size: 12px;
-    padding: 10px;
-  }
-
-  .avatar-rodape {
-    margin-top: 20px;
-    width: 200px;
-    height: 200px;
-  }
-}
-
-
 .hero-rodape {
-  border: #C2B9E2 solid 1px;
-  height: 195px; 
-  max-width: 88rem;
+  position: relative;
+  border: 1px solid #C2B9E2;
+  max-width: 1200px;
   width: 100%;
-  margin: 0 auto;
-  margin-top: 15rem;
-  padding: 10px;
+  margin: 4rem auto 6%;
+  margin-top: 10rem;
+  padding: 16px 20px;
   display: flex;
+  gap: 1rem;
   border-radius: 20px;
-  background: #F6F5FD; 
-  margin-bottom: 6%;
+  background: #F6F5FD;
+  align-items: center;
 }
 
-.texto-rodape{
-  max-width: 700px;
-
-}
+.texto-rodape{ max-width: 720px; }
 
 .descricao-rodape {
   color:#2B2154;
-  font-family: Mulish;
   font-weight: 400;
-  font-style: Regular;
   font-size: 20px;
-  padding: 20px;
-  transform: scaleX(1.3); 
-  transform-origin: left; 
-  white-space: nowrap;
-  align-items: center;
-  justify-content: center;
-  line-height: 1.5em;
+  padding: 8px 0;
+  white-space: normal;  
+  transform: none;      
+  line-height: 1.5;
+  margin-bottom: 12px;
 }
 
 .btn-rodape {
-  border: #B4AEE8 solid 1px;
+  border: 1px solid #B4AEE8;
   padding: 0.7rem 1.4rem;
   border-radius: 60px;
   text-decoration: none;
-  color: #2F195F; 
-  font-weight: 800; 
-  margin-top: 0.6rem;
-  margin-left: 1rem;
+  color: #2F195F;
+  font-weight: 800;
   display: inline-block;
-  background-image:linear-gradient(to top,  #897AD840, #EEEDFA ); 
-  transition: transform 0.3s ease;
+  background-image: linear-gradient(to top, #897AD840, #EEEDFA);
+  transition: background 0.3s ease, color 0.3s ease;
 }
-
 .btn-rodape:hover{
   background: #2F195F;
   color: #F5F5F5;
-  transition: 1.2s;
 }
 
+.avatar-rodape {
+  background: url(assets/avatar-renatinha.png) no-repeat center center / cover;
+  width: 260px;
+  height: 260px;
+  position: absolute;     
+  right: 10px;
+  bottom: -1px;          
+}
 
- .avatar-rodape {
-  background: url(assets/avatar-renatinha.png) no-repeat center center;
-  background-size: cover;
-  width: 321px; 
-  height: 321px;
-  display: flex; 
-  top: 50px;
-  left: 50px;
-  transform: translate( 95%, -43%);
-}  
+/* BREAKPOINTS */
+@media (max-width: 1024px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-imagens { grid-template-columns: 1fr; }
+  .imagem-principal { grid-template-columns: 1fr; }
+  .avatar-rodape {
+    position: static;     
+    width: 200px; height: 200px;
+    align-self: center;
+  }
+}
+@media (max-width: 640px) {
+  .tituloh1 { font-size: clamp(42px, 11vw, 64px); }
+  .destaque-eu, .destaque-renata, .exclama { font-size: clamp(26px, 7vw, 40px); }
+  .btn-fale-comigo { width: 100%; }
+  .metricas { gap: 0.75rem; }
+  .descricao { font-size: 18px; }
+  .descricao-secundaria { font-size: 18px; }
+}
 
 /* serviços */
-
 
 #servicos-id {
   position: relative;
@@ -427,7 +417,6 @@ main{
 }
 
 .servicos{
-  /* background: #e6e6e6; */
   width: 100%;
   height: 64rem;
 }
@@ -460,6 +449,17 @@ main{
   opacity: 1;
   margin-left: 30rem;
   margin-top: 9rem;
+}
+
+h4{
+  font-family: Mulish;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 30px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #A3A3A9;
 }
 
 .card-ui {
@@ -500,15 +500,38 @@ main{
 
 /* logos */
 
-.badge{
+.badge-ui{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7rem;
+  height: 50px;
+  background: #ffffff;
+  color: #3b3b3b;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  cursor: context-menu;
+}
+
+.badge-ux{
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 70px;
-  height: 50.0323486328125px;
-  angle: 0 deg;
-  opacity: 1;
-  top: 4.98px;
+  width: 7rem;
+  height: 50px;
+  background: #ffffff;
+  color: #3b3b3b;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  cursor: context-menu;
+}
+
+.badge-gr{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 50px;
   font-weight: bold;
   font-size: 1rem;
   background: #ffffff;
@@ -516,9 +539,6 @@ main{
   border-radius: 50%;
   margin-bottom: 15px;
   cursor: context-menu;
-
-
-
 }
 
 abbr {
@@ -526,13 +546,28 @@ abbr {
 }
 
 /* paragrafos */
-.ui-paragrafo,
 .ux-paragrafo,
 .gr-paragrafo {
-  font-size: 15px;
+font-family: Mulish;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
 
-  color: #444;
 } 
+
+.ui-paragrafo{
+  font-family: Mulish;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+
+}
 
 /* Títulos */
 .titulo-ui,
@@ -559,6 +594,13 @@ abbr {
   align-items: flex-start;
   gap: 15px; 
 }
+
+.linha-servicos {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px; 
+}
+
 
 .linha-servico .badge {
   margin-bottom: 0; 
@@ -601,7 +643,7 @@ abbr {
   font-size: 0.9rem;
   font-weight: 600;
   border-radius: 999px;
-  font-size: 0.9round-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .tag-ui{
@@ -612,7 +654,7 @@ abbr {
   font-size: 0.9rem;
   font-weight: 600;
   border-radius: 999px;
-  font-size: 0.9round-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .tag-dg{
@@ -628,14 +670,20 @@ abbr {
 
 .tag-ux:hover{
   cursor: pointer;
-  background: #2ff86c;
-  color: #79d297;
+  background: #7BFF85;
+  color: #4f884d;
 }
 
 .tag-ui:hover{
-  background: #39c0ff;
-  color: #8bc7e9ea;
+  background: #68BEFB;
+  color: #0776b6ea;
 }
+
+.tag-dg:hover{
+  background: #fbfd6b;
+  color: #ff811bea;
+}
+
 
 .titulo-projeto{
   font-size: 3.5rem;
@@ -803,10 +851,10 @@ abbr {
 
  .footer-novo {
   background: url(assets/footer\ 01.png) no-repeat center center fixed;
-  background-size: 92% 100%;
-  padding: 60px 30px 30px;
+  background-size: 99% 100%;
+  padding: 62px 90px 30px;
   color: #fff;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Mulish', sans-serif;
   position: relative;
   width: 100%;
   height: 74vh;
@@ -928,7 +976,7 @@ abbr {
 
 .footer-avatar {
   height: 378px;
-  width: 378px;
+  width: 370px;
 }
 
 .footer-direita {
