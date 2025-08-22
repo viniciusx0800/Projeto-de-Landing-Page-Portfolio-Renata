@@ -247,7 +247,7 @@ main{
   height: 0px;
   opacity: 1;
   margin-left: -45px;
-  position: relative;   /* para que 'top' funcione, se necessário */
+  position: relative;   
   margin-bottom: 10px;
 }
 .gif{ width: 25px; }
@@ -445,8 +445,6 @@ main{
 .cards-servicos{
   width: 851px;
   height: 604px;
-  angle: 0deg;
-  opacity: 1;
   margin-left: 30rem;
   margin-top: 9rem;
 }
@@ -627,12 +625,14 @@ letter-spacing: 0%;
 }
 
 .tags {
+  /* border: #000000 solid 1px; */
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 25px;
   margin-top: 10px;
   margin-bottom: 10px;
   cursor: pointer;
+   margin-left: 10px;
 }
 
 .tag-ux{
@@ -640,10 +640,21 @@ letter-spacing: 0%;
   background:#E8F5E9;
   color: #737373;
   padding: 0.5rem 1rem;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-weight: 600;
+  border-radius: 50px;
+  width: 150px;
+  height: 43px;
   border-radius: 999px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  border-width: 1px;
+  padding: 10px;
+  gap: 10px;
+  font-family: Mulish;
+  font-weight: 400;
+  font-style: Regular;
+  line-height: 100%;
+  text-align: center;
+
 }
 
 .tag-ui{
@@ -651,10 +662,20 @@ letter-spacing: 0%;
   background-color: #f3faff;
   color: #737373;
   padding: 0.5rem 1rem;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-weight: 600;
+  border-radius: 50px;
+  width: 150px;
+  height: 43px;
   border-radius: 999px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  border-width: 1px;
+  padding: 10px;
+  gap: 10px;
+  font-family: Mulish;
+  font-weight: 400;
+  font-style: Regular;
+  line-height: 100%;
+  text-align: center;
 }
 
 .tag-dg{
@@ -662,10 +683,18 @@ letter-spacing: 0%;
   background-color: #FFFDE7;
   color: #737373;
   padding: 0.5rem 1rem;
-  border-radius: 999px;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 50px;
+  border-radius: 999px;
+  border-width: 1px;
+  padding: 10px;
+  gap: 10px;
+  font-family: Mulish;
+  font-weight: 400;
+  font-style: Regular;
+  line-height: 100%;
+  text-align: center;
 }
 
 .tag-ux:hover{
@@ -684,40 +713,68 @@ letter-spacing: 0%;
   color: #ff811bea;
 }
 
+.titulo-projetos{
+  width: 567px;
+  height: 80px;
+  text-align:center;
+  padding: 2px;
+  margin-left: 30px;
+}
 
 .titulo-projeto{
   font-size: 3.5rem;
   font-weight: 700;
   color: #1E1E1E;
   margin-bottom: 20px;
+  font-family: Mulish;
+  font-style: Bold;
 }
 
 .projetos-grid {
-  margin: 40px;
-  background: #00ff73;
+  margin: 40px 80px 40px 60px;
+  /* background: #00ff73; */
+  width: 1280px;
   display: grid;
 }
 
 .projetos-grid-2 {
+  /* background: #02507e; */
+  width: 100%;
+  height: 777px;
   display: flex;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  gap: 10px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .card-Rcllinicas{
   border: #D4D4D4 solid 1px;
+  background: #FAFAFA;
+  /* text-align: center; */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-out, box-shadow 0.3s ease-in-out;
   width: 100%;
-  height: 640px;
+  height: 740px;
+  border-radius: 20px;
+  border-width: 1px;
+  padding: 31px;
+  gap: 10px;
   border-radius: 12px;
   padding: 20px;
   margin-bottom: 20px;
 }
 
+.centralizar-img {
+  text-align: center;
+}
+
 .card-inspection{
   border: #D4D4D4 solid 1px;
-  width: 90%;
+  background: #FAFAFA;
+  /* text-align: center; */
+  width: 40%;
+  height: 777px;
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
@@ -728,79 +785,80 @@ letter-spacing: 0%;
 
 .card-litoteca {
   border: #D4D4D4 solid 1px;
+  background: #FAFAFA;
   border-radius: 12px;
-  width: 90%;
+  /* text-align: center; */
+  width: 60%;
+  height: 777px;
   padding: 20px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-out, box-shadow 0.3s ease;
   margin-bottom: 20px;
   margin-left: 20px;
+
 }
 
 .card-social-media {
-  border: #D4D4D4 solid 1px;
+  border: #D4D4D4 solid 2px;
+  background: #FAFAFA;
+  /* text-align: center; */
   width: 100%;
-  height: 640px;
+  height: 740px;
   border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); */
   transition: transform 0.3s ease-out, box-shadow 0.3s ease;
   margin-bottom: 20px;
 }
 
 .imagem-Rclinicas {
-  width: 100%;
+  width: 99%;
   height: 464px;
-  angle: 0deg;
-  opacity: 1;
   border-radius: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 
 .imagem-Inspection {
-  width: 100%;
+  width: 96%;
   height: 464px;
-  angle: 0deg;
-  opacity: 1;
   border-radius: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .imagem-litoteca {
-  width: 100%;
-  height: 464px;
-  angle: 0deg;
-  opacity: 1;
+  width: 98%;
+  height: 464px; 
   border-radius: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 28px;
+  margin-top: 10px;
 }
 
 
 .social-media {
-  width: 100%;
+  width: 99%;
   height: 464px;
-  top: 31.07px;
-  left: 31.01px;
-  angle: 0deg;
   border-radius: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
+  margin-top: 10px;
 }
 
 .titulo-h3 {
+  /* border: #000000 solid 1px; */
+  width: 98%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   font-family: Mulish;
   font-weight: 700;
   font-style: Bold;
   font-size: 24px;
-  leading-trim: NONE;
   line-height: 100%;
   letter-spacing: 0%;
   color: #0A0A0A;
-  margin-bottom: 10px;
-  
+  margin-bottom: 25px;
+  margin-left: 10px;  
 }
 
 .ano {
@@ -814,20 +872,34 @@ letter-spacing: 0%;
   font-size: 20px;  
 }
 
+.descricao-card {
+  /* border: #000000 solid 1px; */
+  width: 100%;
+  margin-bottom: 30px;
+  margin-left: 10px;
+
+}
+
+.descricao-card2 {
+  /* border: #000000 solid 1px; */
+  width: 98%;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  
+}
+
 .paragrafo-descricao {
   font-family: Mulish;
   font-weight: 400;
   font-style: Regular;
-  font-size: 18px;
-  leading-trim: NONE;
-  line-height: 100%;
-  letter-spacing: 1.2px;
-  color: #333333;
-  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 24px;
+  color: #737373;
+  margin-bottom: 5px;
 }
 
 
-.card-Rcllinicas:hover{
+/* .card-Rcllinicas:hover{
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
@@ -844,7 +916,7 @@ letter-spacing: 0%;
 .card-social-media:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
+} */
 
 
 /* Rodapé footer */
