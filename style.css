@@ -8,7 +8,7 @@
 body {
  
   font-family: 'Mulish', sans-serif;
-  background: #ffffff;
+  background: #252525;
   color: #1a1a1a;
 }
 
@@ -81,7 +81,7 @@ main{
   inset: 0;
   background: url(assets/5c4c7a50956309cf829bc93545f9c0c35311a33b.png) no-repeat center center fixed;
   background-size: 3440px;
-  opacity: 0.3; 
+  opacity: 0.2; 
   z-index: 0;
   pointer-events: none;
 }
@@ -174,7 +174,7 @@ main{
 .descricao-secundaria {
   font-weight: 400;
   font-style: Regular;
-  font-size: 20px;
+  font-size: 18px;
   leading-trim: NONE;
   line-height: 100%;
   letter-spacing: 0%;
@@ -187,7 +187,7 @@ main{
   width: 230px;
   height: 45px;
   border-radius: 50px;
-  background: #533E99;
+  background: #7663b6;
   color: #EEEDFA;
   padding: 0.8rem 1.2rem;
   font-size: 20px;
@@ -217,27 +217,39 @@ main{
   align-items: center;
   flex-wrap: wrap;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 50px;
 }
-.metricas .item {
+
+.item {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0 0.5rem;
   position: relative;
 }
-.metricas .item + .item {       
-  border-left: 2px solid #D9D9D9;
+
+
+.line{
+  border: #D9D9D9 solid 2.8px;
+  width: 5px;
+  height: 57.55372238159185px;
+  background: #D9D9D9;
+  opacity: 0.5;
+  margin-top: -10px;
+  margin-bottom: -10px;
 }
-.metricas .valor {
-  font-size: clamp(34px, 5vw, 48px);
+
+
+.valor {
+  font-size: 82.04px;
   color: #B4AEE8;
   font-weight: 800;
   line-height: 1;
 }
+
 .descricao-metrica {
   font-weight: 400;
-  font-size: 13px;
+  font-size: 16px;
   color: #333;
   margin-top: 8px;
 }
@@ -250,6 +262,7 @@ main{
   position: relative;   
   margin-bottom: 10px;
 }
+
 .gif{ width: 25px; }
 
 
@@ -325,7 +338,7 @@ main{
   max-width: 1200px;
   width: 100%;
   margin: 4rem auto 6%;
-  margin-top: 10rem;
+  margin-top: 12rem;
   padding: 16px 20px;
   display: flex;
   gap: 1rem;
@@ -748,11 +761,9 @@ letter-spacing: 0%;
   margin-bottom: 30px;
 }
 
-.card-Rcllinicas{
+.card-Rclinicas{
   border: #D4D4D4 solid 1px;
   background: #FAFAFA;
-  /* text-align: center; */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-out, box-shadow 0.3s ease-in-out;
   width: 100%;
   height: 740px;
@@ -762,7 +773,7 @@ letter-spacing: 0%;
   gap: 10px;
   border-radius: 12px;
   padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 }
 
 .centralizar-img {
@@ -772,12 +783,10 @@ letter-spacing: 0%;
 .card-inspection{
   border: #D4D4D4 solid 1px;
   background: #FAFAFA;
-  /* text-align: center; */
   width: 40%;
   height: 777px;
   border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-out, box-shadow 0.3s ease;
   margin-bottom: 20px;
 
@@ -787,11 +796,9 @@ letter-spacing: 0%;
   border: #D4D4D4 solid 1px;
   background: #FAFAFA;
   border-radius: 12px;
-  /* text-align: center; */
   width: 60%;
   height: 777px;
   padding: 20px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-out, box-shadow 0.3s ease;
   margin-bottom: 20px;
   margin-left: 20px;
@@ -799,16 +806,25 @@ letter-spacing: 0%;
 }
 
 .card-social-media {
-  border: #D4D4D4 solid 2px;
+  border: #D4D4D4 solid 1px;
   background: #FAFAFA;
-  /* text-align: center; */
   width: 100%;
   height: 740px;
   border-radius: 12px;
   padding: 20px;
-  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); */
   transition: transform 0.3s ease-out, box-shadow 0.3s ease;
   margin-bottom: 20px;
+}
+
+.imagem-Rclinicas{
+  background: url(assets/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 464px;
+  border-radius: 20px;
+  margin-top: 16px;
+  margin-bottom: 25px;
 }
 
 .imagem-Rclinicas {
@@ -816,29 +832,37 @@ letter-spacing: 0%;
   height: 464px;
   border-radius: 20px;
   margin-bottom: 20px;
-  margin-top: 20px;
+  
 }
 
-
-.imagem-Inspection {
-  width: 96%;
+.imagem-Rinspection{
+  background: url(assets/banner-2.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
   height: 464px;
   border-radius: 20px;
   margin-bottom: 20px;
   margin-top: 10px;
 }
 
+
 .imagem-litoteca {
-  width: 98%;
-  height: 464px; 
+  background: url(assets/banner-3.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 464px;
   border-radius: 20px;
   margin-bottom: 28px;
   margin-top: 10px;
 }
 
-
-.social-media {
-  width: 99%;
+.imagem-social-media {
+  background: url(assets/banner-4.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
   height: 464px;
   border-radius: 20px;
   margin-bottom: 25px;
@@ -899,24 +923,10 @@ letter-spacing: 0%;
 }
 
 
-/* .card-Rcllinicas:hover{
+.card-Rclinicas:hover{
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.349);
 }
-.card-inspection:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-.card-litoteca:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-.card-social-media:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-} */
 
 
 /* Rodapé footer */
