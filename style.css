@@ -942,24 +942,33 @@ letter-spacing: 0%;
   font-family: 'Mulish', sans-serif;
   position: relative;
   width: 100%;
-  min-height: 74vh; 
+  height: 573px;
   overflow: hidden;
   position: relative;
   overflow: hidden; 
 }
 
-.footer-container {
+/* .footer-container {
+  border: #11f724 solid 1px;
   width: 100%;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   gap: 20px;
-}
+} */
 
 /* ==== ESQUERDA ==== */
+.footer-esquerda {
+  text-align: left;
+  margin-top: 52px;
+  margin-right: 20px;
+
+}
+
 .footer-esquerda span {
   color: #ffffff;
   font-size: 36px;
@@ -985,6 +994,7 @@ letter-spacing: 0%;
   margin: 20px 0;
   color: #e0dfff;
   text-decoration: none;
+  margin-bottom: 35px;
 }
 
 .img-setaI {
@@ -999,8 +1009,8 @@ letter-spacing: 0%;
 }
 
 .footer-icon-email {
-  width: 8px;
-  height: 8px;
+  width: 9px;
+  height: 9px;
 }
 
 .footer-email:hover {
@@ -1027,7 +1037,7 @@ letter-spacing: 0%;
   background-color: #19103d;
 }
 
-/* ==== AVATAR ==== */
+/*  AVATAR  */
 .footer-avatar-container {
   flex: 1 1 300px;
   text-align: center;
@@ -1044,37 +1054,62 @@ letter-spacing: 0%;
   height: auto;
 }
 
-/* ==== DIREITA ==== */
-.container-marca {
+/* Elementos na Direita */
+/* .container-marca {
   flex: 1 1 200px;
   text-align: right;
-}
+  border: #ffffff solid 1px;
+  margin-top: 52px;
+  margin-left: 30px;
+} */
 
 .footer-logo {
   filter: brightness(0) invert(1);
-  max-width: 240px;
+  max-width: 276px;
+  height: 146px;
   width: 100%;
+  margin-bottom: -35px;
+}
+
+.footer-direita {
+  flex: 1 1 200px;
+  text-align: right;
+  margin-top: 75px;
 }
 
 .footer-direitos {
-  color: #ccc;
+  color: #EEEDFA;
   font-size: 12px;
   margin-top: 5px;
 }
 
-.footer-direitos i {
-  font-size: 16px;
-  color: #ffffff;
-  font-weight: 200;
+.footer-simbolo {
+  font-family: Mulish;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 28.75px;
+  letter-spacing: 10px;
+  margin-top: 5px;
 }
 
-/* ==== BOTÃO VOLTAR AO TOPO ==== */
-.footer-topo-btn {
+.footer-texto {
+font-family: Mulish;
+font-weight: 700;
+font-style: Bold;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0%;
+}
+
+/*  BOTÃO VOLTAR AO TOPO  */
+
+.footer-topo {
   position: absolute;
-  top: 35px;
-  right: 67px;
+  width: 360px;
+  height: 50px;
+  top: 58px;
+  right: 90px;
   background: #c8bfff;
-  color: #4a3c6e;
   padding: 12px 20px;
   border-radius: 25px;
   text-decoration: none;
@@ -1082,17 +1117,43 @@ letter-spacing: 0%;
   font-size: 1rem;
   transition: background 0.3s ease;
   text-align: center;
+  
+}
+
+.footer-topo-btn {
+  color: #4a3c6e;
+  text-decoration: none;
+  font-family: Mulish;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+
+}
+
+
+.footer-inicio-btn {
+  color: #2B2154;
+  font-family: Mulish;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
 }
 
 .footer-topo-btn strong {
   font-weight: bold;
 }
 
-.footer-topo-btn:hover {
+.footer-topo:hover {
   background: #ffffff;
 }
 
-/* ==== RESPONSIVIDADE ==== */
+/*  RESPONSIVIDADE  */
 @media (max-width: 1024px) {
   .footer-container {
     flex-direction: column;
