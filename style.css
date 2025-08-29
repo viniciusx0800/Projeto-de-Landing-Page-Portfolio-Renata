@@ -29,21 +29,25 @@ main{
 
 .marcaRe{
   width: 80px;
-  margin-left: 3em;
+  margin-left: 3.5em;
 }
 
 /* Header */
 .header {
+  width: 100%;
   display: flex;
   padding: 25px;
   font-size: 0.9rem;
+  justify-content: space-between;
 }
 
 /* "©"  */
 .letraC {
+  width: 10px;
+  height: 15px;
   position: relative;
-  top: -24px;
-  font-size: 1.2rem;
+  top: -20px;
+  
 }
 
 /* rejota */
@@ -52,10 +56,10 @@ main{
 }
 
 .clik {
-  position: static;
-  top: 50px;
-  left: 50px;
-  transform: translate(-35%, 0%);
+  display: flex;
+  margin-left: 15em;
+  align-self: center;
+  transform: translate(-24%, 0%);
 }
 
 .clik p {
