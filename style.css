@@ -917,11 +917,12 @@ letter-spacing: 0%;
 
 
 /* Rodapé footer */
+
 .footer-novo { 
   background: radial-gradient(
     circle at bottom left, 
-    #4a02a8 0%, 
-    #4c4d69f5 10%,
+    #9318f7 -25%, 
+    #111022da 12%,
     #000000 25%
   );
   padding: 62px 90px 30px;
@@ -934,6 +935,32 @@ letter-spacing: 0%;
   position: relative;
   overflow: hidden; 
 }
+
+
+.footer-novo::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: -200px;
+  width: 60%;
+  height: 90%;
+  background: #6806e9;
+  background: radial-gradient(
+    circle at top ,
+    rgba(129, 44, 241, 0.623) -15%,
+    rgba(63, 62, 71, 0.781) 35%,
+    rgba(10, 10, 10, 0) 70%
+  );
+
+  pointer-events: none; 
+  z-index: 0; 
+}
+
+.footer-novo {
+  position: relative;
+  z-index: 1;
+}
+
 
 /* ==== ESQUERDA ==== */
 .footer-esquerda {
