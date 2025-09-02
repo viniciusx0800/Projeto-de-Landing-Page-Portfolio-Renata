@@ -922,7 +922,7 @@ letter-spacing: 0%;
   background: radial-gradient(
     circle at bottom left, 
     #9318f7 -25%, 
-    #111022da 12%,
+    #0a0911e8 12%,
     #000000 25%
   );
   padding: 62px 90px 30px;
@@ -948,8 +948,8 @@ letter-spacing: 0%;
   background: radial-gradient(
     circle at top ,
     rgba(129, 44, 241, 0.623) -15%,
-    rgba(63, 62, 71, 0.781) 35%,
-    rgba(10, 10, 10, 0) 70%
+    rgba(63, 62, 71, 0.521) 35%,
+    rgba(10, 10, 10, 0) 65%
   );
 
   pointer-events: none; 
