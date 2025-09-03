@@ -385,7 +385,7 @@ main{
 }
 
 /* BREAKPOINTS */
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .hero-grid { grid-template-columns: 1fr; }
   .hero-imagens { grid-template-columns: 1fr; }
   .imagem-principal { grid-template-columns: 1fr; }
@@ -402,7 +402,7 @@ main{
   .metricas { gap: 0.75rem; }
   .descricao { font-size: 18px; }
   .descricao-secundaria { font-size: 18px; }
-}
+} */
 
 /* serviços */
 
@@ -1167,7 +1167,7 @@ letter-spacing: 0%;
 }
 
 /*  RESPONSIVIDADE  */
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .footer-container {
     flex-direction: column;
     align-items: center;
@@ -1195,4 +1195,174 @@ letter-spacing: 0%;
   .footer-avatar {
     max-width: 220px;
   }
+} */
+
+/* =======================
+   BREAKPOINTS RESPONSIVOS
+   ======================= */
+
+/* Tablets e notebooks pequenos */
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    margin: 0 20px;
+  }
+  .hero-texto {
+    width: 100%;
+    margin: 2rem 0;
+    text-align: center;
+  }
+  .hero-imagens {
+    grid-template-columns: 1fr;
+    margin: 2rem auto;
+    justify-content: center;
+  }
+  .hero-imagens img {
+    max-width: 100%;
+    height: auto;
+  }
+  .hero-rodape {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  .avatar-rodape {
+    position: static;
+    margin: auto;
+  }
+
+  .cards-servicos {
+    width: 100%;
+    margin: 4rem auto;
+  }
+
+  .projetos-grid,
+  .projetos-grid-2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+  }
+  .card-Rclinicas,
+  .card-inspection,
+  .card-litoteca,
+  .card-social-media {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  .footer-novo {
+    height: auto;
+    padding: 40px 20px;
+  }
+  .footer-esquerda,
+  .footer-direita {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .footer-topo {
+    position: static;
+    margin: 20px auto 0;
+  }
 }
+
+/* Tablets em retrato */
+@media (max-width: 768px) {
+  .tituloh1 {
+    font-size: clamp(36px, 9vw, 60px);
+  }
+  .destaque-eu,
+  .destaque-renata,
+  .exclama {
+    font-size: clamp(24px, 7vw, 38px);
+  }
+  .descricao,
+  .descricao-secundaria {
+    font-size: 16px;
+    text-align: center;
+  }
+  .btn-fale-comigo {
+    width: 100%;
+  }
+  .metricas {
+    justify-content: center;
+  }
+
+  .servicos-titulo {
+    font-size: 42px;
+    text-align: center;
+    margin: 2rem auto;
+  }
+  .cards-servicos {
+    margin: auto;
+    padding: 0 1rem;
+  }
+
+  .titulo-projeto {
+    font-size: 2.5rem;
+  }
+  .paragrafo-descricao {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  .footer-avatar {
+    max-width: 200px;
+  }
+}
+
+/* Celulares pequenos (300px até 480px) */
+@media (min-width: 300px) and (max-width: 480px) {
+  .hero-texto {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+  .hero-rodape {
+    padding: 1rem;
+  }
+
+  .servicos-titulo {
+    font-size: 32px;
+  }
+  .card-ui,
+  .card-ux,
+  .card-gr {
+    padding: 1rem;
+    height: auto;
+  }
+
+  .titulo-h3 {
+    font-size: 20px;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .ano {
+    font-size: 16px;
+  }
+  .tags {
+    gap: 10px;
+    margin-left: 0;
+  }
+
+  .footer-titulo,
+  .footer-destaque {
+    font-size: 24px;
+  }
+  .footer-email {
+    font-size: 18px;
+    flex-wrap: wrap;
+  }
+  .footer-icon {
+    width: 32px;
+    height: 32px;
+  }
+  .footer-topo {
+    width: 100%;
+    padding: 10px;
+  }
+  .footer-topo-btn {
+    font-size: 16px;
+  }
+}
+
