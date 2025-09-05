@@ -11,8 +11,8 @@ body {
 }
 
 main{
-  background: #ffffff;
   min-width: 300px;
+   max-width: 1700px;
   margin: auto;
   padding: 0px;
 }
@@ -94,7 +94,9 @@ main{
 .hero-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 3rem;
   align-items: start;
+  margin: 0px 90px 10px 70px;
   justify-self: auto;
 }
 
@@ -263,7 +265,6 @@ main{
   gap: 0.8rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
-
 }
 
 .imagem-principal {
@@ -273,7 +274,6 @@ main{
 }
 
 .imagem-renata {
-
   width: 320px;
   height: 300px;
   border-radius: 12px;
@@ -315,6 +315,7 @@ main{
   grid-column: 2 / 3;
   align-items: center;
   justify-content: flex-start;
+  overflow: hidden;
 }
 
 .ferramentas img {
@@ -326,7 +327,8 @@ main{
 .hero-rodape {
   position: relative;
   border: 1px solid #C2B9E2;
-  width: 85%;
+  max-width: 1300px;
+  width: 100%;
   height: 200px;
   margin: 4rem auto 6%;
   margin-top: 12rem;
@@ -618,7 +620,7 @@ letter-spacing: 0%;
   margin-top: 10px;
   margin-bottom: 10px;
   cursor: pointer;
-   margin-left: 10px;
+  margin-left: 10px;
 }
 
 .tag-ux{
@@ -700,25 +702,23 @@ letter-spacing: 0%;
 }
 
 .titulo-projetos{
-  width: 567px;
-  height: 80px;
-  text-align:center;
-  padding: 2px;
-  margin-left: 30px;
+  margin-left: 80px;
+  margin-bottom: 40px;
 }
 
 .titulo-projeto{
-  font-size: 3.5rem;
+  font-size: 64px;
   font-weight: 700;
   color: #1E1E1E;
-  margin-bottom: 20px;
   font-family: Mulish;
   font-style: Bold;
 }
 
 .projetos-grid {
   margin: 40px 60px 40px 60px;
+  max-width: 1383px;
   display: grid;
+  margin: auto;
 }
 
 .projetos-grid-2 {
@@ -1142,10 +1142,6 @@ letter-spacing: 0%;
 .footer-topo-btn strong {
   font-weight: bold;
 }
-
-/* .footer-topo:hover {
-  background: #ffffff;
-} */
 
 .footer-topo:hover {
   background: #f0f0f0;
