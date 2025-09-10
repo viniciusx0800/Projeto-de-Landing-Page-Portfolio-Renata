@@ -8,6 +8,8 @@
 body {
   font-family: 'Mulish', sans-serif;
   color: #1a1a1a;
+  overflow-x: hidden; /* Impede rolagem horizontal */
+  width: 100%;
 }
 
 main{
