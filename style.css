@@ -13,8 +13,6 @@ body {
 }
 
 main{
-  min-width: 300px;
-  max-width: 1700px;
   margin: auto;
   padding: 0px;
 }
@@ -329,8 +327,7 @@ main{
 .hero-rodape {
   position: relative;
   border: 1px solid #C2B9E2;
-  max-width: 1300px;
-  width: 100%;
+  width: 88%;
   height: 200px;
   margin: 4rem auto 6%;
   margin-top: 12rem;
