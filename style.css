@@ -691,16 +691,19 @@ letter-spacing: 0%;
   cursor: pointer;
   background: #7BFF85;
   color: #4f884d;
+  cursor: not-allowed;
 }
 
 .tag-ui:hover{
   background: #68BEFB;
   color: #0776b6ea;
+  cursor: not-allowed;
 }
 
 .tag-dg:hover{
   background: #fbfd6b;
   color: #ff811bea;
+  cursor: not-allowed;
 }
 
 .titulo-projetos{
