@@ -4,12 +4,12 @@
 
 
     body {
-        font-size: 20px;
+        
     }
 
     main{
-        max-width: 98%; 
-       
+       font-size: 20px;
+      
     }
 
   .img-seta,
@@ -35,6 +35,7 @@
   } 
 
   .hero-grid {
+    max-width: 450px;
     grid-template-columns: 1fr;
     text-align: center;
     margin: 0px 20px 10px 20px;
@@ -42,17 +43,16 @@
 
 
   .hero-imagens {
+    width: 100%;
     grid-template-columns: 1fr 1fr;
     gap: 0.5rem;
-    margin: 2rem 20px 2rem 20px;
+    padding: 20px;
     justify-items: center;
   }
 
   .imagem-principal {
-    grid-column: span 2;
     flex-direction: column;
     align-items: center;
-    margin: 10px 50px;
   }
 
   .hero-texto {
@@ -84,9 +84,9 @@
 
 
     .item {
-        padding: 0.5rem;
-        width: 100%;
-        text-align: center;
+      padding: 0.5rem;
+      width: 100%;
+      text-align: center;
     }
 
     .descricao-metrica {
@@ -95,12 +95,12 @@
 
     
   .hero-rodape {
+    width: 99.9%;
     height: auto;
-    flex-direction: column;
-    text-align: center;
+    text-align: justify;
     padding-bottom: 30px;
-    margin: auto;
-    margin-bottom: 12px;
+    margin: 19px 15px 0px 15px;
+    /* margin-bottom: 12px; */
     
   }
   .descricao-rodape {
@@ -128,20 +128,22 @@
   }
 
   .servicos-titulo {
-    font-size: 2.5rem;
+    display: inline;
+    font-size: 1.8rem;
+    /* position: relative; */
   }
 
   .cards-servicos {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    margin: 20px 20px 40px 20px;
+    margin: auto;
+    margin: 60px -90px 10px -70px;
+    max-width: 500px;
+   
   }
   
   .card-ux,
   .card-gr,
   .card-ui {
-    max-width: 450px;
-    width: 400px;
+    width: 100%;
     height: 200px;
     padding: 20px;
   }
@@ -153,7 +155,11 @@
   }
 
   .projeto-grid {
-   width: 85%;
+   /* width: 85%; */
+   padding: 15px;
+   /* display: flex;
+   align-items: center; */
+   margin: 60px;
   }
 
   .titulo-projetos {
@@ -186,6 +192,12 @@
     margin: auto;
   }
 
+  .footer-novo{
+    width: 500px;
+  
+    margin: auto;
+  }
+
   .footer-email {
     flex-direction: column;
     text-align: center;
@@ -198,7 +210,7 @@
         padding: 10px 15px;
         display: flex;
         justify-content: center;
-        align-items: center;
+        /* align-items: center; */
        
     }
 
@@ -208,7 +220,7 @@
     }
 
     .footer-inicio-btn{
-        font-size: 1.8rem;
+      font-size: 1.8rem;
     }
 
   .footer-topo-btn::after {
