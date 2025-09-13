@@ -146,6 +146,7 @@
     width: 100%;
     height: 210px;
     padding: 10px;
+    overflow: scroll;
   }
 
   .ux-paragrafo,
@@ -158,12 +159,12 @@
   }
 
   .projetos{
-    background: #222;
+    /* background: #222; */
 
   }
 
   .projeto-grid {
-    max-width: 500px;
+    max-width: 450px;
    
   }
 
@@ -181,8 +182,17 @@
   .card-social-media,
   .card-Rclinicas{
     overflow: scroll;
-    width: 100%;
+    width: 98%;
     height: auto; 
+    margin: auto;
+    margin-bottom: 15px;
+  }
+
+  .imagem-social-media,
+  .imagem-litoteca,
+  .imagem-Rinspection,
+  .imagem-Rclinicas{
+     width: 100%;
   }
 
   .projetos-grid-2 {
@@ -192,37 +202,42 @@
   }
 
   .card-litoteca{
-    width: 400px;
+    width: 98%;
     height: auto;
     margin: auto;
     overflow: scroll;
   }
 
-  .footer-novo{
-    width: 500px;
-  
-    margin: auto;
-  }
 
   .footer-email {
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     }
 
     .footer-topo {
-        width: 50%;
-        height: 8vh;
-        margin: 20px auto 0;
-        padding: 10px 15px;
-        display: flex;
-        justify-content: center;
-        /* align-items: center; */
-       
+      width: 100px;
+      height: 8vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: absolute;
+      bottom: 250px;          
+      left: 50%;
+      transform: translateX(-50%); 
+      z-index: 1;
+      margin-bottom: 30px;
+      gap: 22px;
+    }
+
+    .footer-inicio-btn{
+       margin-left: 13px;
     }
 
     .footer-topo-btn {
         color: transparent; 
         position: relative;
+     
     }
 
     .footer-inicio-btn{
