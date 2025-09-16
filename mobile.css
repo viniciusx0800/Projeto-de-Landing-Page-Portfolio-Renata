@@ -8,7 +8,7 @@
     }
 
     main{
-       font-size: 20px;
+      font-size: 20px;
       overflow: hidden;
     }
 
@@ -305,10 +305,64 @@
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 700px) and (max-width: 1024px){
 
+  body {
+    font-family: 'Mulish', sans-serif;
+    color: #1a1a1a;
+  }
+
+  main{
+    background: #646464;
+    overflow: hidden;
+  }
+
+   
+  .hero-grid {
+    grid-template-columns: 1fr;
+    margin: auto;
+  }
+ 
   
-}  
+  .metricas {
+    background: #ffffff;
+    display: flex; 
+    margin-bottom: 15px;
+    margin: auto;
+    width: 100%;
+  }
+
+  .hero-imagens {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    background: #9dfdbd;
+    max-width: 710px; 
+    margin: auto;
+  }
+
+  .hero-rodape {
+    padding-bottom: 30px;
+    margin: 35px 0px 35px 20px;
+    width: 95%;
+    /* max-width: 900px; */
+  }
+
+  .descricao-rodape {
+    display: flex;
+    font-size: 18px;
+    line-height: 1.;
+    margin-bottom: 12px;
+    width: 100%;
+    max-width: 600px;
+  } 
+
+   .avatar-rodape {
+    width: 220px; 
+    height: 230px;
+  }
+
+}
 
 /* @media screen and (max-width: 1200px) {
 
