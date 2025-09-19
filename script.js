@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   const topoBtn = document.querySelector('.footer-topo-btn');
   if (topoBtn) {
-    topoBtn.addEventListener('click', function (e) {    // ...existing code...
+    topoBtn.addEventListener('click', function (e) {    
     topoBtn.addEventListener('click', function (e) {
       e.preventDefault();
       window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', function () {
       e.preventDefault();
 
       
-      const scrollStep = 100; // pixels por passo
-      const scrollInterval = 30; // ms entre passos
+      const scrollStep = 100; 
+      const scrollInterval = 30; 
 
       function scrollUp() {
         if (window.scrollY > 0) {

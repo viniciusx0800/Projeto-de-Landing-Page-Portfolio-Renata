@@ -313,13 +313,20 @@
   }
 
   main{
-    background: #646464;
     overflow: hidden;
   }
 
   .header{
     width: 100%;
     
+  }
+
+  .marcaRe{
+    margin-left: 5%;
+  }
+
+  .clik{
+    margin-right: -2%;
   }
    
   .hero-grid {
@@ -336,20 +343,19 @@
   }
 
   .metricas {
-    background: #f56b6be8;
+    padding: auto;
+    margin: 0%;
     display: flex; 
     margin-bottom: 20px; 
     width: 100%;
   }
 
   .hero-imagens {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    max-width: 700px; 
-    margin: 55px 30px 35px 30px;
+    align-items: center;
     margin: auto;
-    overflow: hidden;
+   margin-top: 56px;
+   padding: 15px;
+   max-width: 700px;
   }
 
   .hero-rodape {
@@ -387,6 +393,18 @@
     overflow:  auto;
   }
 
+  .footer-titulo{
+    /* font-size: 26px; */
+  }
+
+  .footer-avatar{
+    width: 270px;
+    height: 280px;
+  }
+   
+  .footer-direita{
+    display: none;
+  } 
 }
 
 /* @media screen and (max-width: 1200px) {
