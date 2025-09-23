@@ -1,16 +1,10 @@
 
  @media screen and (min-width: 300px) and (max-width: 500px) {
 
-
-
-    body {
-        
-    }
-
-    main{
-      font-size: 20px;
-      overflow: hidden;
-    }
+  main{
+    font-size: 20px;
+    overflow: hidden;
+  }
 
   .img-seta,
   .footer-novo::before,
@@ -29,7 +23,7 @@
   .line,
   .avatar-rodape, 
   #servicos-id::before,
-   #inicio::before,
+  #inicio::before,
   .hero-imagens.shape {
     display: none;
   } 
@@ -83,15 +77,15 @@
   }
 
 
-    .item {
-      padding: 0.5rem;
-      width: 100%;
-      text-align: center;
-    }
+  .item {
+    padding: 0.5rem;
+    width: 100%;
+    text-align: center;
+  }
 
-    .descricao-metrica {
-        font-size: 0.85rem;
-    }
+  .descricao-metrica {
+    font-size: 0.85rem;
+  }
 
     
   .hero-rodape {
@@ -100,9 +94,8 @@
     text-align: justify;
     padding-bottom: 30px;
     margin: 0px 0px 0px 5px;
-    /* margin-bottom: 12px; */
-    
   }
+
   .descricao-rodape {
     margin: 0 auto;
     margin-top: 20px;
@@ -130,14 +123,12 @@
   .servicos-titulo {
     display: inline;
     font-size: 1.8rem;
-    /* position: relative; */
   }
 
   .cards-servicos {
     margin: auto;
     margin: 0px -60px 0px -60px; 
     max-width: 500px;
-   
   }
   
   .card-ux,
@@ -156,11 +147,6 @@
     font-size: 1.1rem;
     display: flex;
     padding: 10px;
-  }
-
-  .projetos{
-    /* background: #222; */
-
   }
 
   .projeto-grid {
@@ -192,7 +178,7 @@
   .imagem-litoteca,
   .imagem-Rinspection,
   .imagem-Rclinicas{
-     width: 100%;
+    width: 100%;
   }
 
   .projetos-grid-2 {
@@ -212,37 +198,37 @@
   .footer-email {
     flex-direction: column;
     text-align: left;
-    }
+  }
 
-    .footer-topo {
-      width: 100px;
-      height: 8vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      position: absolute;
-      bottom: 250px;          
-      left: 50%;
-      transform: translateX(-50%); 
-      z-index: 1;
-      margin-bottom: 30px;
-      gap: 22px;
-    }
+  .footer-topo {
+    width: 100px;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    bottom: 250px;          
+    left: 50%;
+    transform: translateX(-50%); 
+    z-index: 1;
+    margin-bottom: 30px;
+    gap: 22px;
+  }
 
-    .footer-inicio-btn{
-       margin-left: 13px;
-    }
+  .footer-inicio-btn {
+    margin-left: 13px;
+  }
 
-    .footer-topo-btn {
-        color: transparent; 
-        position: relative;
-     
-    }
+  .footer-topo-btn {
+    color: transparent; 
+    position: relative;
+    
+  }
 
-    .footer-inicio-btn{
-      font-size: 1.8rem;
-    }
+  .footer-inicio-btn {
+    font-size: 1.8rem;
+  }
 
   .footer-topo-btn::after {
     content: ""; 
@@ -276,7 +262,7 @@
    white-space: nowrap;
   }
 
-  .footer-email{
+  .footer-email {
     text-align: center;
     position: absolute;
     bottom: 250px;          
@@ -335,11 +321,7 @@
   }
  
   .hero-texto{
-     margin: auto;
-  }
-
-  .btn-fale-comigo{
-   
+    margin: auto;
   }
 
   .metricas {
@@ -351,8 +333,8 @@
   }
 
   .hero-imagens {
-    align-items: center;
-    margin: auto;
+   align-items: center;
+   margin: auto;
    margin-top: 56px;
    padding: 15px;
    max-width: 700px;
@@ -362,8 +344,6 @@
     padding-bottom: 30px;
     margin: 35px 35px 35px 35px;
     width: 90%;
-    
-    /* max-width: 900px; */
   }
 
   .descricao-rodape {
@@ -375,26 +355,17 @@
     max-width: 600px;
   } 
 
-   .avatar-rodape {
+  .avatar-rodape {
     width: 220px; 
     height: 230px;
-  }
-
-  .teste-img{
-   
   }
 
   .cards-servicos{
    margin: 60px 35px 5px 35px;
   }
 
-
   .card-inspection{
     overflow:  auto;
-  }
-
-  .footer-titulo{
-    /* font-size: 26px; */
   }
 
   .footer-avatar{
@@ -407,9 +378,8 @@
   } 
 }
 
-/* @media screen and (max-width: 1200px) {
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
 
-  
   .footer-novo {
     height: auto;
     padding: 40px 20px;
@@ -420,7 +390,24 @@
     position: static;
     transform: none;
     margin: 20px auto 0;
+    position: static;
+    transform: none;
+    margin: 20px auto 0;
+    width: auto;
+    height: auto;
+    padding: 10px 15px;
   }
+
+}
+
+/* @media screen and (max-width: 1170px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin: 0px 20px 10px 20px;
+  }
+
+  .hero-texto {
 
   .footer-direita {
     text-align: center;
@@ -434,24 +421,6 @@
   }
 
   .footer-topo {
-    position: static;
-    transform: none;
-    margin: 20px auto 0;
-    width: auto;
-    height: auto;
-    padding: 10px 15px;
-  }
-
-}
-
-@media screen and (max-width: 1170px) {
-  .hero-grid {
-    grid-template-columns: 1fr;
-    text-align: center;
-    margin: 0px 20px 10px 20px;
-  }
-
-  .hero-texto {
     width: 100%;
     height: auto;
     font-size: 1.5rem;
